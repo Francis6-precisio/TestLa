@@ -6,7 +6,12 @@ import CarItem from "./src/components/molecules/carItem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarItem
+        name={"Model X"}
+        taggLine={"Order Online For"}
+        taggLineCTA={"Touchless Delivery"}
+        image={require("./src/assets/images/ModelX.jpeg")}
+      />
       <StatusBar style="auto" />
     </View>
   );
