@@ -4,7 +4,8 @@ import Buttons from "../../atomes/buttons";
 import styles from "./styles";
 
 export default function CarItem(props) {
-  const { name, taggLine, taggLineCTA, image } = props;
+  const { name, taggline, tagglineCTA, image } = props.car;
+  //console.warn(props.car);
 
   return (
     <View style={styles.carContainer}>
@@ -13,7 +14,7 @@ export default function CarItem(props) {
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subtitle}>
-          {taggLine} <Text style={styles.subtitleCTA}>{taggLineCTA}</Text>
+          {taggline} <Text style={styles.subtitleCTA}>{tagglineCTA}</Text>
         </Text>
       </View>
 
